@@ -42,12 +42,16 @@
     </div>
 
     <div class="mb-3">
-      <label for="town" class="form-label">My home town is
-        <span class="tooltip">
-            <i class="fa-solid fa-info"></i>
-          <span class="tooltiptext">What town did you live in before coming to college?</span>
-        </span>
-      </label>
+      <label for="town" class="form-label">My home town is </label>
+    <button
+        type = "button"
+        class = "btn btn-link p-0"
+        data-bs-toggle = "tooltip"
+        data-bs-title = "What town did you live in before coming to college?"
+        aria-label = "More information about home town"
+    >
+    <i class="fa-solid fa-info"></i>
+    </button>
       <input type="text" id="town" name="town" class="form-control" required>
     </div>
 
