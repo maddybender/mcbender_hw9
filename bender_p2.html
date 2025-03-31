@@ -10,27 +10,69 @@
   <h1>Business Analytics Student Survey</h1>
 
   <form action="bender_thankyou.html">
+    
+    <!-- RADIO BUTTONS with proper labels -->
     <fieldset class="mb-3">
-      <legend>I am finishing my </legend>
-      <div><input type="radio" name="year" value="1" required> first year at Iowa</div>
-      <div><input type="radio" name="year" value="2"> second year at Iowa</div>
-      <div><input type="radio" name="year" value="3"> third year at Iowa</div>
-      <div><input type="radio" name="year" value="4"> fourth year at Iowa</div>
-      <div><input type="radio" name="year" value="5"> fifth or more year at Iowa</div>
+      <legend>I am finishing my <span class="text-danger">Required</span></legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="year1" name="year" value="1" required>
+        <label class="form-check-label" for="year1">First year at Iowa</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="year2" name="year" value="2">
+        <label class="form-check-label" for="year2">Second year at Iowa</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="year3" name="year" value="3">
+        <label class="form-check-label" for="year3">Third year at Iowa</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="year4" name="year" value="4">
+        <label class="form-check-label" for="year4">Fourth year at Iowa</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="year5" name="year" value="5">
+        <label class="form-check-label" for="year5">Fifth or more year at Iowa</label>
+      </div>
     </fieldset>
 
+    <!-- CHECKBOXES with proper labels -->
     <fieldset class="mb-3">
-        <legend>BAIS core class I have completed </legend>
-        <div><input type="checkbox" name="class" value="info" class="bais-checkbox" required> Information Systems</div>
-        <div><input type="checkbox" name="class" value="ops" class="bais-checkbox"> Operations</div>
-        <div><input type="checkbox" name="class" value="found" class="bais-checkbox"> Foundations of Business Analytics</div>
-        <div><input type="checkbox" name="class" value="ct" class="bais-checkbox"> Computational Thinking</div>
-        <div><input type="checkbox" name="class" value="db" class="bais-checkbox"> Database Management</div>
-        <div><input type="checkbox" name="class" value="dw" class="bais-checkbox"> Data Wrangling</div>
-        <div><input type="checkbox" name="class" value="dm" class="bais-checkbox"> Data Mining</div>
-        <div><input type="checkbox" name="class" value="capstone" class="bais-checkbox"> BAIS Capstone</div>
-      </fieldset>
+      <legend>BAIS core class I have completed <span class="text-danger">Required</span></legend>
       
+      <div class="form-check">
+        <input type="checkbox" id="classInfo" name="class" value="info" class="form-check-input" required>
+        <label for="classInfo" class="form-check-label">Information Systems</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classOps" name="class" value="ops" class="form-check-input">
+        <label for="classOps" class="form-check-label">Operations</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classFound" name="class" value="found" class="form-check-input">
+        <label for="classFound" class="form-check-label">Foundations of Business Analytics</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classCT" name="class" value="ct" class="form-check-input">
+        <label for="classCT" class="form-check-label">Computational Thinking</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classDB" name="class" value="db" class="form-check-input">
+        <label for="classDB" class="form-check-label">Database Management</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classDW" name="class" value="dw" class="form-check-input">
+        <label for="classDW" class="form-check-label">Data Wrangling</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classDM" name="class" value="dm" class="form-check-input">
+        <label for="classDM" class="form-check-label">Data Mining</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="classCapstone" name="class" value="capstone" class="form-check-input">
+        <label for="classCapstone" class="form-check-label">BAIS Capstone</label>
+      </div>
+    </fieldset>
 
     <p>Page 2 of 2</p>
     <button type="submit" class="btn btn-primary">Finish</button>
